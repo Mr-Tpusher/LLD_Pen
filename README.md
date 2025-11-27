@@ -29,3 +29,6 @@ just add the ink.
 
 ### Future scope
 we might have other objects which can write like Pencil and Chalk.
+
+### Pen UML diagram
+![Pen uml diagram](uml/Pen_uml_v0.png)
