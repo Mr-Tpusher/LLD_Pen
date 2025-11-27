@@ -13,6 +13,7 @@ public class BallPen extends Pen {
         this.refill = refill;
     }
 
+    // here consideration is that, write() behaviour is different in all types of Pens
     @Override
     public void write(String text) {
         System.out.println(text);

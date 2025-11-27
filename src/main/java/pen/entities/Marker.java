@@ -16,6 +16,7 @@ public class Marker extends Pen {
         this.ink = ink;
     }
 
+    // here consideration is that, write() behaviour is different in all types of Pens
     @Override
     public void write(String text) {
         System.out.println(text);
