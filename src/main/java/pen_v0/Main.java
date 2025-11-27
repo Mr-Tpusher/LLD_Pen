@@ -1,18 +1,18 @@
-package pen;
+package pen_v0;
 
-import pen.constants.InkColour;
-import pen.constants.NibSize;
-import pen.constants.PenBodyType;
-import pen.entities.*;
+import pen_v0.constants.InkColour;
+import pen_v0.constants.NibSize;
+import pen_v0.constants.PenBodyType;
+import pen_v0.entities.*;
 
 public class Main {
     public static void main(String[] args) {
         // --------- BallPen-----------------------//
-        // Create a 0.5 nib size, blue ink, plastic body, ball pen
+        // Create a 0.5 nib size, blue ink, plastic body, ball pen_v0
         Pen ballpen = new BallPen(PenBodyType.PLASTIC, new Refill(new Nib(NibSize.POINT5), new Ink(InkColour.BLUE)));
         ballpen.write("Hello");
 
-        // create a 0.7 nib size, black ink, metal body, ball pen
+        // create a 0.7 nib size, black ink, metal body, ball pen_v0
         Pen ballpen2 = new BallPen(PenBodyType.METAL, new Refill(new Nib(NibSize.POINT7), new Ink(InkColour.BLACK)));
         ballpen2.write("How are you?");
 
@@ -25,6 +25,8 @@ public class Main {
         // --------- marker -----------------------//
         Pen marker = new Marker(PenBodyType.METAL, new Nib(NibSize.POINT7), new Ink(InkColour.GREEN));
         marker.write("Work hard, play harder.");
+
+        // TODO -> use factory to create pens
 
     }
 }

@@ -1,10 +1,10 @@
-package pen.entities;
+package pen_v0.entities;
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import pen.constants.PenBodyType;
-import pen.interfaces.Writable;
+import pen_v0.constants.PenBodyType;
+import pen_v0.interfaces.Writable;
 
 @Getter
 @Setter

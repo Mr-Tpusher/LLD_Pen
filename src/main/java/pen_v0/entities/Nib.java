@@ -1,6 +1,6 @@
-package pen.entities;
+package pen_v0.entities;
 import lombok.*;
-import pen.constants.NibSize;
+import pen_v0.constants.NibSize;
 
 @Getter
 @Setter

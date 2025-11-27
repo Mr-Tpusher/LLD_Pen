@@ -1,7 +1,7 @@
-package pen.entities;
+package pen_v0.entities;
 
 import lombok.*;
-import pen.constants.PenBodyType;
+import pen_v0.constants.PenBodyType;
 
 @Getter
 @Setter

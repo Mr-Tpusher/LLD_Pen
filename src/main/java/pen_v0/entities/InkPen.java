@@ -1,16 +1,15 @@
-package pen.entities;
+package pen_v0.entities;
 
 import lombok.*;
-import pen.constants.PenBodyType;
+import pen_v0.constants.PenBodyType;
 
 @Getter
 @Setter
-@ToString
-public class Marker extends Pen {
+public class InkPen extends Pen {
     private Nib nib;
     private Ink ink;
 
-    public Marker(PenBodyType penBodyType, Nib nib, Ink ink) {
+    public InkPen(PenBodyType penBodyType, Nib nib, Ink ink) {
         super(penBodyType);
         this.nib = nib;
         this.ink = ink;
@@ -22,5 +21,14 @@ public class Marker extends Pen {
         System.out.println(text);
         System.out.println("-> written with " + this);
         System.out.println("--------------------------");
+    }
+
+    @Override
+    public String toString() {
+        return "InkPen{" +
+                "body=" + this.getBody() +
+                ", nib=" + nib +
+                ", ink=" + ink +
+                '}';
     }
 }
