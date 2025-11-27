@@ -19,7 +19,7 @@ public class Marker extends Pen {
     @Override
     public void write(String text) {
         System.out.println(text);
-        System.out.println("-> written with Marker");
+        System.out.println("-> written with " + this);
         System.out.println("--------------------------");
     }
 }

@@ -5,7 +5,6 @@ import pen.constants.PenBodyType;
 
 @Getter
 @Setter
-@ToString
 public class InkPen extends Pen {
     private Nib nib;
     private Ink ink;
@@ -18,7 +17,16 @@ public class InkPen extends Pen {
     @Override
     public void write(String text) {
         System.out.println(text);
-        System.out.println("-> written with InkPen");
+        System.out.println("-> written with " + this);
         System.out.println("--------------------------");
+    }
+
+    @Override
+    public String toString() {
+        return "InkPen{" +
+                "body=" + this.getBody() +
+                ", nib=" + nib +
+                ", ink=" + ink +
+                '}';
     }
 }
